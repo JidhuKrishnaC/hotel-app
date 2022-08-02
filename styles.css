@@ -1,0 +1,121 @@
+#header-nav{
+    background-color: #f6b319;
+    border-radius: 0;
+    border: 0;
+}
+#footer-nav{
+    background-color: #f6b319;
+    width:100%;
+    height:20%; 
+}
+.brand
+{
+    text-align: center;
+    padding: 40px 0;
+    color: #557c3e;
+    text-transform: uppercase;
+    line-height: .75;
+    font-weight: bold;
+    border-radius: 10px;
+    position: relative;
+}
+.brand img{
+    position: flex;
+    float: left;
+    width: fit-content;
+}
+h3{
+    text-align: center;
+    font-family: "Comic Sans MS";
+    color: #ffffff;
+}
+p{
+    font-family: "Lucida Console", "Courier New", monospace;  
+    text-align: left;
+    padding-left: 7px;
+    color: #ffffff;
+}
+.orderDetails{
+    display: flex;
+    justify-content: center;
+    padding-left: 71px;
+    margin-left: -118px;
+    margin-right: -15px;
+}
+/* .container {
+box-shadow:0 0 50px #3F0C1F;
+border: 2px solid #3F0C1F;
+} */
+.sub-img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.jumbotron {
+    background: url('Luxury.jpg') no-repeat;
+    box-shadow:0 0 50px #3F0C1F;
+    border: 2px solid #3F0C1F;
+    background-size: 1600px 1067px;
+    height: 1000px;
+}
+
+#menu-tile, #specials-tile, #map-tile{
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+    }
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover{
+    box-shadow: 0 1px 5px 1px #ccccCC;
+}
+#heading {
+    margin-left: 16px;
+}
+
+.orderSummary{
+    box-shadow:0 0 50px #757374;
+    border: 2px solid #ffffff;
+    height: 700px;
+    margin: 0px 200px 0px 200px;
+}
+
+#itemHeading{
+    text-align: center;
+    color: #ffffff;
+}
+h4{
+    text-align: left;
+    color: #ffffff;
+    padding-left: 80px;
+}
+#foodItem, #foodItemRate{
+    /* text-align: left; */
+    color: #ffffff;
+}
+#price{
+    text-align: right;
+    color: #ffffff;
+    padding-right: 80px;
+}
+/* .button-class{
+    /* text-align: center; */
+    /* width: 60%; */
+/* } */ */
+.order-Body{
+    box-shadow:0 0 50px #757374;
+    margin: 10% 20% 0% 20% ;
+    border: 2px solid #ffffff;
+}
+.button-submit:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+li{
+    padding-right: 10px;
+}
+
+  

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>The Hunger House</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   </head>
+   <body style="background-color: #752341;">
+      <header>
+         <nav id="header-nav" class="navbar navbar default">
+               <div class = "navbar-header">
+                     <a href="The Hunger House.html" class="">
+                        <img src="hungry_developer.jpg" id="logo-img" height="120px" width="120px"/>
+                     </a>
+                </div>
+                <div class="navbar-nav" id="heading" >
+                    <a href="The Hunger House.html" class="">
+                        <h1>The Hunger House</h1>
+                     </a>
+                </div>
+                
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+         </nav>
+      </header>
+      <!-- <div id="main-content" class=" container"> -->
+      <div class=" col-xs-12 jumbotron">
+      </div>
+      <div id="home-tiles" class=" row">
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a onclick="foodMenu('Burger', 'burg.jpg', 220)"> 
+            <div id="menu-tile">
+                <span>
+                    <img src="burg.jpg" class="sub-img"/>
+                </span>
+            </div>
+            <div>
+                <h3>Burger</h3>
+                <div>
+                    <p>
+                        (Halal)Crispy fried supreme of chicken[half], veggies, cheese[1 slice], HH special toppings.
+                        <p>
+                            <span>&#8377;</span>220
+                        </p>
+                    </p>
+                </div>
+            </div>
+         </a>
+      </div>
+      <div class=" col-md-4 col-sm-6 col-xs-12">
+        <a onclick="foodMenu('Sandwich', 'sand.jpg', 180)"> 
+            <div id="specials-tile">
+                <span>
+                    <img src="sand.jpg" class="sub-img"/>
+                </span>
+            </div>
+            <div>
+                <h3>Sandwich</h3>
+                <div>
+                    <p>
+                        1 Layer spicy grilled paneer, 1 layer veg patty, 1 layer fully spread veggies, HH special toppings.
+                        <p>
+                            <span>&#8377;</span>180
+                        </p>
+                    </p>
+                </div>
+            </div>
+         </a>
+      </div>
+      <div class=" col-md-4 col-sm-12 col-xs-12">
+         <a onclick="foodMenu('Pizza', 'piz.jpg', 500)"> 
+            <div id="map-tile">
+                <span>
+                    <img src="piz.jpg" class="sub-img"/>
+                </span>
+            </div>
+            <div>
+                <h3>Pizza</h3>
+                <div>
+                    <p>
+                        Light & crispy new San Francisco Style Crust, topped with Chef's special sauce and a drizzle of extra virgin olive oil.
+                    <p>
+                    <span>&#8377;</span>500
+                    </p>
+                    </p>
+                </div>
+            </div>
+         </a>
+
+      <!-- </div> -->
+      <script>
+        function foodMenu(item, img, rate){
+            var link = "order.html?item="+item+"&img="+img+"&rate="+rate;
+            window.location.href=link;
+        }
+      </script>
+      
+   </body>
+</html>

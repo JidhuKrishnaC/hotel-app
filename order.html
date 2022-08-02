@@ -1,0 +1,75 @@
+<!DOCTYPE html> 
+<html> 
+   <head> 
+      <meta charset="utf-8"> 
+      <title>The Hunger House</title> 
+      <link rel="stylesheet" href="styles.css"> 
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">   </head> 
+    
+   <body style="background-color: #3F0C1F;"> 
+      <header> 
+         <nav id="header-nav" class="navbar navbar default"> 
+               <div class = "navbar-header"> 
+                     <a href="The Hunger House.html" class=""> 
+                        <img src="hungry_developer.jpg" id="logo-img" height="120px" width="120px"/> 
+                     </a> 
+                </div> 
+                <div class="navbar-nav mr-auto" id="heading" > 
+                    <a href="The Hunger House.html" class=""> 
+                        <h1>The Hunger House</h1> 
+                     </a> 
+                </div.> 
+         </nav> 
+      </header> 
+ 
+   <div class="order-Body"> 
+      <div class="row text-center"> 
+         <div class="col-12"> 
+            <h1 id="itemHeading"> Order Summary </h1> 
+         </div> 
+      </div> 
+      <div class="row text-center"> 
+         <div class="col-12"> 
+            <img id="foodItemImg"/> 
+         </div> 
+      </div> 
+      <div class="row text-center"> 
+         <div class="col-12"> 
+            <h3 id="foodItemRate"></h3> 
+         </div> 
+      </div> 
+      <div class="row text-center"> 
+         <div class="col-12"> 
+            <form> 
+               <div class="m-3 pl-2"> 
+                  <input type="text" name="name" id="name" placeholder="Enter your name here"/> 
+               </div> 
+               <div class="m-3 pl-2"> 
+                  <input type="text" name="address" id="address" placeholder="Enter your address here"/> 
+               </div> 
+               <div class="ml-4 button-class"> 
+                  <button type="button" onclick="msgFunc()" class="button-submit">Submit</button> 
+               </div> 
+            </form> 
+         </div> 
+      </div> 
+   </div> 
+       
+      <!-- </div> --> 
+      <script> 
+ 
+ 
+         var url = new URL(window.location.href);  
+         var item = url.searchParams.get("item");  
+         var img = url.searchParams.get("img");  
+         var rate = url.searchParams.get("rate");  
+         // document.getElementById('foodItem').innerHTML = "pizza"; 
+         document.getElementById('foodItemImg').src = img; 
+         document.getElementById('foodItemRate').innerHTML = item + " " + "&#8377; " + rate; 
+         function msgFunc(){ 
+            var name = document.getElementById("name").value; 
+            alert("Order has been placed successfully "+name); 
+         } 
+       </script> 
+   </body> 
+</html>
